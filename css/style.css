@@ -1,0 +1,72 @@
+.debug {
+  background-color: rgba(200, 100, 50, 0.25);
+}
+
+.lt-wrapper-80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.lt-pd-50 {
+  padding: 50px 0;
+}
+
+/* HEADER */
+header .lt-header {
+  height: 80px;
+  background-color: #F3F5F9;
+}
+
+/* MAIN */
+
+/* JUMBOTRON */
+main .lt-jumbotron {
+  height: 500px;
+  background-image: url(../img/bg-banner-home.jpg);
+  background-size: 105%;
+}
+
+.lt-jumbotron .lt-box-debug {
+  height: 400px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+/* CUSTOMERS */
+main .lt-customers {
+  height: 270px;
+  background-color: #F3F5F9;
+}
+
+.lt-customers .lt-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* DEPLOY */
+main .lt-deploy {
+  height: 700px;
+  background-color: bisque;
+}
+
+.lt-deploy .lt-box-debug {
+  height: 160px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+/* DESIGN */
+main .lt-design {
+  height: 770px;
+  background-color: #F3F5F9;
+}
+
+.lt-design .lt-box-debug {
+  height: 50px;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
