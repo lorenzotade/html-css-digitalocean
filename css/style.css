@@ -14,7 +14,7 @@ h1 {
 
 .lt-description {
   font-size: 18px;
-  color: #BBCDFF;
+  color: #6F7B97;
   line-height: 130%;
 }
 
@@ -38,6 +38,17 @@ h1 {
 
 .lt-pd-50 {
   padding: 50px 0;
+}
+
+.lt-pd-25 {
+  padding: 25px 0;
+}
+
+.lt-mt-20 {
+  margin-top: 20px;
+}
+.lt-mb-20 {
+  margin-bottom: 30px;
 }
 
 .lt-blue-link {
@@ -92,6 +103,10 @@ main .lt-jumbotron {
   margin-top: 80px;
 }
 
+main .lt-jumbotron .lt-description {
+  color: #BBCDFF;
+}
+
 main .lt-jumbotron .lt-signup-box {
   background-color: #FFF;
   border-radius: 5px;
@@ -126,37 +141,37 @@ main .lt-jumbotron .lt-signup-box .lt-btn-google {
   box-shadow: 1px 1px 1px #CECECE;
 }
 
-
 /* CUSTOMERS */
 main .lt-customers {
   background-color: #F3F5F9;
 }
 
-.lt-customers .lt-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .lt-customers h5 {
+  text-transform: uppercase;
+  color: #6F7B97;
+  margin-bottom: 25px;
 }
+
+@media all and (max-width: 991px) {
+  main .lt-customers .lt-customers-logo img {
+    height: 140px;
+    vertical-align: middle;
+  }
+}
+
 
 /* DEPLOY */
-main .lt-deploy {
-  background-color: bisque;
+main .lt-deploy ul li {
+  padding: 10px 10px;
+  border-left: 2px solid #CECECE
 }
 
-.lt-deploy .lt-box-debug._1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-bottom: 30px;
+main .lt-deploy ul li a {
+  color: #6F7B97;
 }
 
-.lt-deploy .lt-box-debug {
-  height: 160px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .lt-deploy .lt-wrapper-80 .lt-description {
+  font-size: 14px;
 }
 
 /* DESIGN */
@@ -164,19 +179,17 @@ main .lt-design {
   background-color: #F3F5F9;
 }
 
-.lt-design .lt-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .lt-design .lt-wrapper-60 {
+  line-height: 360px;
 }
 
-.lt-design .lt-box-debug._2 {
-  height: 500px;
+main .lt-design i {
+  font-size: 28px;
+}
+
+main .lt-design img {
   width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-top: 30px;
+  min-width: 400px;
 }
 
 /* FEATURES */
