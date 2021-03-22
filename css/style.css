@@ -19,7 +19,7 @@ h1 {
 }
 
 .lt-caption {
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .lt-wrapper-80 {
@@ -50,8 +50,22 @@ h1 {
 .lt-mb-20 {
   margin-bottom: 30px;
 }
+.lt-mb-10 {
+  margin-bottom: 10px;
+}
 
-.lt-blue-link {
+/* BUTTONS */
+.lt-menu-right ul li button.lt-btn-sign {
+  border-color: #006AFF;
+}
+main .lt-jumbotron .lt-signup-box .lt-btn-jumbo {
+  width: 100%;
+  padding: 5px;
+  background-color: #006AFF;
+  opacity: 0.7;
+  color: #FFF;
+}
+main .lt-start .btn {
   color: #006AFF;
 }
 
@@ -64,10 +78,12 @@ header .lt-header {
   line-height: 80px;
   width: 100%;
   background-color: #FFF;
+  border-bottom: 2px solid #006AFF;
 }
 
 .lt-logo img {
   width: 100%;
+  min-width: 150px;
 }
 
 header .lt-header li a {
@@ -76,10 +92,6 @@ header .lt-header li a {
 
 header .lt-header li a.lt-blue-link {
   color: #006AFF;
-}
-
-.lt-menu-right ul li button.lt-btn-sign {
-  border-color: #006AFF;
 }
 
 header .lt-header .lt-menu-burger {
@@ -99,7 +111,7 @@ header .lt-header .lt-menu-burger .lt-menu-bar {
 /* JUMBOTRON */
 main .lt-jumbotron {
   background-image: url(../img/bg-banner-home.jpg);
-  background-size: 110%;
+  background-size: contain;
   margin-top: 80px;
 }
 
@@ -126,13 +138,6 @@ main .lt-jumbotron .lt-signup-box input{
   border-radius: 5px;
 }
 
-main .lt-jumbotron .lt-signup-box .lt-btn-jumbo {
-  width: 100%;
-  padding: 5px;
-  background-color: #006AFF;
-  opacity: 0.7;
-  color: #FFF;
-}
 main .lt-jumbotron .lt-signup-box .lt-btn-google {
   width: 100%;
   padding: 5px;
@@ -152,14 +157,6 @@ main .lt-customers h5 {
   margin-bottom: 25px;
 }
 
-@media all and (max-width: 991px) {
-  main .lt-customers .lt-customers-logo img {
-    height: 140px;
-    vertical-align: middle;
-  }
-}
-
-
 /* DEPLOY */
 main .lt-deploy ul li {
   padding: 10px 10px;
@@ -170,7 +167,8 @@ main .lt-deploy ul li a {
   color: #6F7B97;
 }
 
-main .lt-deploy .lt-wrapper-80 .lt-description {
+main .lt-deploy .lt-wrapper-80 .lt-description,
+main .lt-features .lt-description {
   font-size: 14px;
 }
 
@@ -179,95 +177,96 @@ main .lt-design {
   background-color: #F3F5F9;
 }
 
-main .lt-design .lt-wrapper-60 {
-  line-height: 360px;
+main .lt-design .lt-wrapper-60 .col-xs-1 {
+  padding-top: 25%;
 }
 
-main .lt-design i {
+main .fas {
   font-size: 28px;
 }
 
 main .lt-design img {
   width: 100%;
-  min-width: 400px;
+  min-width: 350px;
+}
+
+main .far {
+  color:#006AFF
+}
+
+main .far:active {
+  background-color: #006AFF;
+  border-radius: 50%;
 }
 
 /* FEATURES */
-main .lt-features {
-  background-color: bisque;
-}
-
-.lt-features .lt-box-debug._1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-}
-
-.lt-features .lt-box-debug {
-  height: 160px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-top: 30px;
-}
 
 /* SERVERS */
 main .lt-servers {
   background-image: linear-gradient(#0147C5, #03209A);
 }
 
-.lt-servers .lt-box-debug._1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+.row.lt-row {
+  position: relative;
 }
 
-.lt-servers .lt-box-debug._riga {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+.row.lt-row:not(:last-child)::before {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  height: 1px;
+  width: 95%;
+  background-color: #FFF;
 }
 
-.lt-servers .lt-box-debug {
-  height: 40px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .lt-servers h2,
+main .lt-start h2,
+main .lt-servers h5 {
+  color: #FFF;
+}
+
+main .lt-servers p {
+  color: #B8C6E8;
+  font-size: 95%;
+  margin: 10px 0;
+}
+
+main .lt-servers a {
+  color: #00D2CC;
 }
 
 /* DEV-TEAMS */
 main .lt-dev-teams {
-  background-color: bisque;
+  background-color: #F3F5F9;
 }
 
-.lt-dev-teams .lt-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
+main .lt-dev-teams .lt-box {
+  background-color: #FFF;
+  padding: 30px 0;
+  max-width: 450px;
+  min-width: 250px;
+  margin: 20px auto;
 }
 
-.lt-dev-teams .lt-box-debug._2 {
-  height: 450px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 10px;
-  margin-top: 30px;
+main .lt-dev-teams .lt-box h6 {
+  margin-bottom: 3px;
+}
+
+main .lt-dev-teams .lt-box p.lt-description {
+  font-size: 100%;
+}
+
+main .lt-dev-teams .lt-box p.lt-caption {
+  font-size: 80%;
+}
+
+main .lt-dev-teams .lt-wrapper-60 .col-xs-1 {
+  padding-top: 20%;
 }
 
 /* START */
 main .lt-start {
   background-image: linear-gradient(#0147C5, #03209A);
-}
-
-.lt-start .lt-box-debug {
-  height: 50px;
-  width: 100%;
-  border: 1px solid black;
-  margin-bottom: 20px;
 }
 
 /* FOOTER */
@@ -293,3 +292,16 @@ footer {
   border: 1px solid black;
   margin-bottom: 20px;
 }
+
+
+@media all and (max-width: 991px) {
+  main .lt-customers .lt-customers-logo img {
+    height: 140px;
+    vertical-align: middle;
+  }
+
+  main .lt-design .lt-caption {
+    font-size: 16px;
+  }
+}
+
