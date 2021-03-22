@@ -32,16 +32,14 @@ h1 {
   margin: 0 auto;
 }
 
-.lt-pd-0 {
-  padding: 0;
-}
-
 .lt-pd-50 {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .lt-pd-25 {
-  padding: 25px 0;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .lt-mt-20 {
@@ -187,7 +185,6 @@ main .fas {
 
 main .lt-design img {
   width: 100%;
-  min-width: 350px;
 }
 
 main .far {
@@ -244,7 +241,6 @@ main .lt-dev-teams .lt-box {
   background-color: #FFF;
   padding: 30px 0;
   max-width: 450px;
-  min-width: 250px;
   margin: 20px auto;
 }
 
