@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <title>Bootstrap 101 Template</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
@@ -19,21 +22,42 @@
     <header>
 
       <div class="lt-header">
-        <div class="container">
+        <div class="container lt-pd-0">
           <div class="row">
             <div class="col-xs-2">
-              <div class="lt-box-debug debug"></div>
+              <div class="lt-logo">
+                <img src="img/logo.png" alt="">
+              </div>
             </div>
             <div class="col-xs-4 col-xs-offset-1 visible-lg-inline-block">
-              <div class="lt-box-debug debug"></div>
+              <div class="lt-menu-left text-center">
+                <ul class="list-inline">
+                  <li><a href="#">Products <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Customers</a></li>
+                  <li><a href="#">Community <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
             </div>
             <div class="col-xs-4 col-xs-offset-1 visible-lg-inline-block">
-              <div class="lt-box-debug debug"></div>
+              <div class="lt-menu-right text-right">
+                <ul class="list-inline">
+                  <li><a href="#">Docs</a></li>
+                  <li><a href="#">Support <i class="fas fa-chevron-down"></i></a></li>
+                  <li><a href="#">Login</a></li>
+                  <li><button class="btn btn-default lt-btn-sign"><a class="lt-blue-link" href="#">Sign Up</a></button></li>
+                </ul>
+                
+              </div>
             </div>
-
-            <div class="col-xs-1 col-xs-offset-9 hidden-lg">
-              <div class="lt-box-debug debug"></div>
+            <div class="col-xs-1 col-xs-offset-9 text-right hidden-lg">
+              <div class="lt-menu-burger">
+                <div class="lt-menu-bar"></div>
+                <div class="lt-menu-bar"></div>
+                <div class="lt-menu-bar"></div>
+              </div>
             </div>
+          
           </div>
         </div> <!-- container -->
       </div>
@@ -48,10 +72,43 @@
         <div class="container lt-pd-50">
           <div class="row">
             <div class="col-sm-7">
-              <div class="lt-box-debug debug"></div>
+              <div class="lt-jumbo-text">
+                <h1>
+                  The simplest cloud platform for developers &amp; teams
+                </h1>
+                <p class="lt-description">
+                  Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, wether you're running a virtual machine or ten thousands.
+                </p>
+              </div>
             </div>
             <div class="col-sm-5">
-              <div class="lt-box-debug debug"></div>
+              <div class="lt-signup-box text-center">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <h3>Deploy your app in seconds.</h3>
+                    <h3>Get started now.</h3>
+                  </div>
+                  <form>
+                    <div class="col-xs-12">
+                      <input type="email" placeholder="Email">
+                    </div>
+                    <div class="col-xs-12">
+                      <input type="password" placeholder="Password">
+                    </div>
+                    <div class="col-xs-12">
+                      <button type="submit" class="btn btn-xs lt-btn-jumbo">Create your account</button>
+                    </div>
+                    <div class="col-xs-12">
+                      <button type="button" class="btn btn-xs lt-btn-google">Sign up with Google</button>
+                    </div>
+                    <div class="col-xs-12">
+                      <p class="lt-caption">
+                        By signing up you agree to the <a href="#">Term of service</a>.
+                      </p>
+                    </div>
+                  </form>
+                </div>
+              </div>
           </div>
           </div>
         </div> <!-- container -->
