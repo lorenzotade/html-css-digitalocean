@@ -195,15 +195,22 @@ main .lt-design {
   background-color: #F3F5F9;
 }
 
-main .lt-design .lt-wrapper-60 .col-xs-1 {
-  padding-top: 25%;
+main .lt-design .lt-img-slide {
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
 }
 
-main .fas {
+main .lt-box-img .fas,
+main .lt-box-dev .fas {
   font-size: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-main .far:active {
+main .far:active,
+main .far:hover,
+main .far.lt-active {
   background-color: #006AFF;
   border-radius: 50%;
 }
@@ -247,27 +254,33 @@ main .lt-dev-teams {
   background-color: #F3F5F9;
 }
 
-main .lt-dev-teams .lt-box {
+main .lt-dev-teams .lt-box-dev {
+  position: relative;
+}
+
+main .lt-dev-teams .lt-box-dev .fas.lt-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+main .lt-dev-teams .lt-box-inside {
+  display: inline-block;
+  width: 80%;
   background-color: #FFF;
-  padding: 30px 0;
-  max-width: 450px;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 main .lt-dev-teams .lt-box h6 {
   margin-bottom: 3px;
 }
 
-main .lt-dev-teams .lt-box p.lt-description {
+main .lt-dev-teams .lt-box-inside p.lt-description {
   font-size: 100%;
 }
 
-main .lt-dev-teams .lt-box p.lt-caption {
+main .lt-dev-teams .lt-box-inside p.lt-caption {
   font-size: 80%;
-}
-
-main .lt-dev-teams .lt-wrapper-60 .col-xs-1 {
-  padding-top: 20%;
 }
 
 /* START */
@@ -368,10 +381,20 @@ footer .lt-shark .lt-shark-text .lt-square {
   transform: rotate(45deg);
 }
 
+@media all and (max-width: 1199px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
 @media all and (max-width: 991px) {
   main .lt-customers .lt-customers-logo img {
-    height: 140px;
+    height: 120px;
     vertical-align: middle;
+  }
+
+  main .far {
+    font-size: 80%;
   }
 
   main .lt-design .lt-caption {
