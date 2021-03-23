@@ -1,37 +1,27 @@
+/* COMMON */
 body {
   font-family: 'Roboto', sans-serif;
 }
-
 h1 {
   color: #FFF;
   font-size: 48px;
   line-height: 130%;
 }
-
 h4 {
   color: #FFF;
 }
 
-.lt-description {
-  font-size: 18px;
-  color: #6F7B97;
-  line-height: 130%;
-}
-
-.lt-caption {
-  font-size: 12px;
-}
-
+/* WRAPPER */
 .lt-wrapper-80 {
   width: 80%;
   margin: 0 auto;
 }
-
 .lt-wrapper-60 {
   width: 60%;
   margin: 0 auto;
 }
 
+/* PADDING AND MARGINS */
 .lt-pd-50 {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -40,7 +30,6 @@ h4 {
   padding-top: 25px;
   padding-bottom: 25px;
 }
-
 .lt-mt-20 {
   margin-top: 20px;
 }
@@ -51,6 +40,15 @@ h4 {
   margin-bottom: 10px;
 }
 
+/* TEXT */
+.lt-description {
+  font-size: 18px;
+  color: #6F7B97;
+  line-height: 130%;
+}
+.lt-caption {
+  font-size: 12px;
+}
 .lt-color-blue {
   color: #006AFF;
 }
@@ -81,9 +79,34 @@ main .lt-jumbotron .lt-signup-box .lt-btn-jumbo {
 main .lt-jumbotron .lt-signup-box .lt-btn-jumbo:hover {
   opacity: 1;
 }
+main .lt-jumbotron .lt-signup-box .lt-btn-google {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 10px 0;
+  background-color: #FFF;
+  box-shadow: 1px 1px 1px #CECECE;
+}
+main .lt-jumbotron .lt-signup-box .lt-btn-google img {
+  height: 20px;
+  display: inline;
+}
 main .lt-start .btn:active {
   color: #FFF;
   background-color: #006AFF;
+}
+
+/* FONT AWSOME */
+main .lt-box-img .fas,
+main .lt-box-dev .fas {
+  font-size: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .far:active,
+main .far:hover,
+main .far.lt-active {
+  background-color: #006AFF;
+  border-radius: 50%;
 }
 
 /* HEADER */
@@ -124,8 +147,6 @@ header .lt-header .lt-menu-burger .lt-menu-bar {
   background-color: #2485FD;
 }
 
-/* MAIN */
-
 /* JUMBOTRON */
 main .lt-jumbotron {
   background-image: url(../img/bg-banner-home.jpg);
@@ -149,19 +170,6 @@ main .lt-jumbotron .lt-signup-box input{
   margin-bottom: 10px;
   border: 1px solid #EEE;
   border-radius: 5px;
-}
-
-main .lt-jumbotron .lt-signup-box .lt-btn-google {
-  width: 100%;
-  padding: 5px;
-  margin: 5px 0 10px 0;
-  background-color: #FFF;
-  box-shadow: 1px 1px 1px #CECECE;
-}
-
-main .lt-jumbotron .lt-signup-box .lt-btn-google img {
-  height: 20px;
-  display: inline;
 }
 
 /* CUSTOMERS */
@@ -199,20 +207,6 @@ main .lt-design .lt-img-slide {
   display: inline-block;
   width: 80%;
   margin: 0 auto;
-}
-
-main .lt-box-img .fas,
-main .lt-box-dev .fas {
-  font-size: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-main .far:active,
-main .far:hover,
-main .far.lt-active {
-  background-color: #006AFF;
-  border-radius: 50%;
 }
 
 /* SERVERS */
@@ -255,6 +249,7 @@ main .lt-dev-teams {
 }
 
 main .lt-dev-teams .lt-box-dev {
+  height: 100%;
   position: relative;
 }
 
@@ -262,6 +257,13 @@ main .lt-dev-teams .lt-box-dev .fas.lt-center {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+main .lt-dev-teams .lt-box-dev .fa-chevron-left.lt-center {
+  left: 0;
+}
+main .lt-dev-teams .lt-box-dev .fa-chevron-right.lt-center {
+  right: 0;
 }
 
 main .lt-dev-teams .lt-box-inside {
@@ -322,6 +324,7 @@ footer a:hover i {
   color:#00D2CC
 }
 
+/* SHARK */
 footer .lt-shark {
   position: fixed;
   z-index: 998;
@@ -329,7 +332,6 @@ footer .lt-shark {
   width: 100%;
   background-color: transparent;
 }
-
 footer .lt-shark .lt-shark-img {
   position: relative;
   width: 60px;
@@ -341,7 +343,6 @@ footer .lt-shark .lt-shark-img {
   background-position: center;
   border-radius: 5px;
 }
-
 footer .lt-shark .lt-shark-img .lt-shark-badge {
   position: absolute;
   top: -5px;
@@ -352,13 +353,11 @@ footer .lt-shark .lt-shark-img .lt-shark-badge {
   border-radius: 50%;
   border: 3px solid #FFF;
 }
-
 footer .lt-shark .lt-shark-img .lt-shark-badge p {
   color: #FFF;
   margin: -2px;
   padding: 0;
 }
-
 footer .lt-shark .lt-shark-text {
   position: relative;
   max-width: 250px;
@@ -370,7 +369,6 @@ footer .lt-shark .lt-shark-text {
   margin-right: 20px;
   margin-left: 20px;
 }
-
 footer .lt-shark .lt-shark-text .lt-square {
   position: absolute;
   right: -7px;
@@ -381,6 +379,7 @@ footer .lt-shark .lt-shark-text .lt-square {
   transform: rotate(45deg);
 }
 
+/* MEDIA QUERIES */
 @media all and (max-width: 1199px) {
   h1 {
     font-size: 36px;
@@ -392,20 +391,16 @@ footer .lt-shark .lt-shark-text .lt-square {
     height: 120px;
     vertical-align: middle;
   }
-
   main .far {
     font-size: 80%;
   }
-
   main .lt-design .lt-caption {
     font-size: 16px;
   }
-
   footer .lt-shark .lt-shark-img,
   footer .lt-shark .lt-shark-text {
     float: left!important;
   }
-
   footer .lt-shark .lt-shark-text .lt-square {
     position: absolute;
     left: -7px;
@@ -415,5 +410,4 @@ footer .lt-shark .lt-shark-text .lt-square {
     background-color: #FFF;
     transform: rotate(45deg);
   }
-
 }
