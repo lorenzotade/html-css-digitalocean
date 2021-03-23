@@ -67,8 +67,9 @@ h4 {
 header .lt-header li a.lt-color-blue {
   color: #006AFF;
 }
-header .lt-header button.lt-btn-sign:hover a.lt-blue-link {
+header .lt-header button.lt-btn-sign:hover a.lt-color-blue {
   color: #FFF;
+  text-decoration: none;
 }
 main .lt-jumbotron .lt-signup-box .lt-btn-jumbo {
   width: 100%;
