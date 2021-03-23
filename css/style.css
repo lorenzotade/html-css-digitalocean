@@ -158,6 +158,11 @@ main .lt-jumbotron .lt-signup-box .lt-btn-google {
   box-shadow: 1px 1px 1px #CECECE;
 }
 
+main .lt-jumbotron .lt-signup-box .lt-btn-google img {
+  height: 20px;
+  display: inline;
+}
+
 /* CUSTOMERS */
 main .lt-customers {
   background-color: #F3F5F9;
@@ -303,6 +308,65 @@ footer a:hover i {
   color:#00D2CC
 }
 
+footer .lt-shark {
+  position: fixed;
+  z-index: 998;
+  bottom: 20px;
+  width: 100%;
+  background-color: transparent;
+}
+
+footer .lt-shark .lt-shark-img {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #006AFF;
+  background-image: url(../img/shark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
+}
+
+footer .lt-shark .lt-shark-img .lt-shark-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 22px;
+  height: 22px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  border: 3px solid #FFF;
+}
+
+footer .lt-shark .lt-shark-img .lt-shark-badge p {
+  color: #FFF;
+  margin: -2px;
+  padding: 0;
+}
+
+footer .lt-shark .lt-shark-text {
+  position: relative;
+  max-width: 250px;
+  height: 60px;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 5px;
+  color: #041D4D;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+footer .lt-shark .lt-shark-text .lt-square {
+  position: absolute;
+  right: -7px;
+  bottom: 9px;
+  width: 14px;
+  height: 14px;
+  background-color: #FFF;
+  transform: rotate(45deg);
+}
+
 @media all and (max-width: 991px) {
   main .lt-customers .lt-customers-logo img {
     height: 140px;
@@ -312,4 +376,20 @@ footer a:hover i {
   main .lt-design .lt-caption {
     font-size: 16px;
   }
+
+  footer .lt-shark .lt-shark-img,
+  footer .lt-shark .lt-shark-text {
+    float: left!important;
+  }
+
+  footer .lt-shark .lt-shark-text .lt-square {
+    position: absolute;
+    left: -7px;
+    bottom: 9px;
+    width: 14px;
+    height: 14px;
+    background-color: #FFF;
+    transform: rotate(45deg);
+  }
+
 }
